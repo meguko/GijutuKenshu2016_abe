@@ -65,6 +65,54 @@ class Person {
 		$this->printTelephone();
 		echo "</br>";
 	}
+	
+	// 氏名のgetter
+	public function printName() {
+		
+		return $this->name;
+	}
+	
+	// 住所のgetter
+	public function printAddress() {
+		
+		return $this->address;
+	}
+	
+	// 年齢のgetter
+	public function printAge() {
+		
+		return $this->age;
+	}
+	
+	// 電話番号のgetter
+	public function printTelephone() {
+		
+		return $this->telephone;
+	}
+	
+	// 氏名のsetter
+	public function printName($name) {
+		
+		$this->name = $name;
+	}
+	
+	// 住所のsetter
+	public function printAddress($address) {
+		
+		$this->address = $address;
+	}
+	
+	// 年齢のsetter
+	public function printAge($age) {
+		
+		$this->age = $age;
+	}
+	
+	// 電話番号のsetter
+	public function printTelephone($telephone) {
+		
+		$this->telephone = $telephone;
+	}
 }
 
 ?>

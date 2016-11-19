@@ -2,12 +2,12 @@
 
 /* 
  * Java基礎
- * Lesson03 クラスとは
+ * Lesson04 クラスとは
  * 下に示した個人クラス(Person)を作成し、
  * Personに登録した情報をPersonクラスのprintメソッドで出力するプログラム。
  */
 
-// 個人クラス読み込み
+// クラス読み込み
 require_once('Person.php');
 
 // インスタンス化
