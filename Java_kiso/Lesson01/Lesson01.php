@@ -17,7 +17,7 @@ $echo_str = "";		// 結果出力用変数
 for($i = $min_num; $i <= $max_num; $i++){
 	
 	// 出力対象の値の場合
-	if($i%$chk_num == 0 || strstr(strval($i), strval($chk_num))){
+	if($i%$chk_num === 0 || strstr(strval($i), strval($chk_num))){
 		
 		// 出力用変数に代入
 		$echo_str .= strval($i);
