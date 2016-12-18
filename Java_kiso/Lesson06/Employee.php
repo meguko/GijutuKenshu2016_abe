@@ -13,12 +13,12 @@ class Employee extends Person {
 	public function __construct( $name, $age, $section, $telephone ) {
 		
 		// 親クラスのコンストラクタ呼び出し
-		parent::__construct( $name, $age, $telephone );
+		parent::__construct( $name, null, $age, $telephone );
 		
 		$this->section = $section;		// 所属部署名
 	}
 	
-	// 氏名を出力
+	// 所属部署名を出力
 	public function printSection() {
 		
 		echo $this->section;

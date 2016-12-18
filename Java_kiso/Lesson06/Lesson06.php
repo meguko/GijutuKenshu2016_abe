@@ -16,18 +16,18 @@ require_once('Engineer.php');
 $person_satou = new Person( "佐藤太郎", "東京都", 20, "030123456" );
 $person_yamada = new Person( "山田花子", "青森県", 80, "0170123456" );
 $person_kimura = new Person( "木村次郎", "京都府", 38, "0750123456" );
-$employee_satou = new Employee( "佐藤太郎(社員)", 21, "a", "030123456" );
-$employee_yamada = new Employee( "山田花子(社員)", 81, "b", "0170123456" );
-$employee_kimura = new Employee( "木村次郎(社員)", 31, "c", "0750123456" );
-$engineer_satou = new Engineer( "佐藤太郎(技術者)", "東京都", 20, "a", "030123456" );
-$engineer_yamada = new Engineer( "山田花子(技術者)", "青森県", 80, "a", "0170123456" );
-$engineer_kimura = new Engineer( "木村次郎(技術者)", "京都府", 38, "a", "0750123456" );
+$employee_satou = new Employee( "佐藤太郎(社員)", 21, "所属部署1", "030123456" );
+$employee_yamada = new Employee( "山田花子(社員)", 81, "所属部署2", "0170123456" );
+$employee_kimura = new Employee( "木村次郎(社員)", 31, "所属部署3", "0750123456" );
+$engineer_satou = new Engineer( "佐藤太郎(技術者)", "東京都", 20, "保有技術1", "030123456" );
+$engineer_yamada = new Engineer( "山田花子(技術者)", "青森県", 80, "保有技術2", "0170123456" );
+$engineer_kimura = new Engineer( "木村次郎(技術者)", "京都府", 38, "保有技術3", "0750123456" );
 
 // Listに登録
 $arrayPerson = array();
 array_push($arrayPerson, $person_satou, $person_yamada, $person_kimura);
 array_push($arrayPerson, $employee_satou, $employee_yamada, $employee_kimura);
-array_push($arrayPerson, $person_satou, $person_yamada, $person_kimura);
+array_push($arrayPerson, $engineer_satou, $engineer_yamada, $engineer_kimura);
 
 // 個人情報を出力
 foreach($arrayPerson as $person){

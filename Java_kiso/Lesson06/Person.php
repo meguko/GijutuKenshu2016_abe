@@ -13,24 +13,12 @@ class Person {
 	private $telephone;		// 電話番号
 	
 	// コンストラクタ
-	public function __construct( ...$args ) {
+	public function __construct( $name, $address, $age, $telephone ) {
 		
-		$numargs = func_num_args();
-		
-		if($numargs === 4){
-		
-			$this->name = $args[0];			// 氏名
-			$this->address = $args[1];		// 住所
-			$this->age = $args[2];				// 年齢
-			$this->telephone = $args[3];	// 電話番号
-			
-		}else if($numargs === 3){
-		
-			$this->name = $args[0];			// 氏名
-			$this->age = $args[1];				// 年齢
-			$this->telephone = $args[2];	// 電話番号
-		}
-		
+		$this->name = $name;			// 氏名
+		$this->address = $address;		// 住所
+		$this->age = $age;				// 年齢
+		$this->telephone = $telephone;	// 電話番号
 	}
 	
 	// 氏名を出力
